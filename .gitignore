@@ -1,0 +1,28 @@
+# ===== WordPress Core =====
+wp-admin/
+wp-includes/
+
+# ===== Uploads (images, vidéos, fichiers volumineux) =====
+wp-content/uploads/
+
+# ===== Caches & temporaires =====
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/ai1wm-backups/
+
+# ===== Plugins externes (optionnel) =====
+# Garde seulement tes plugins custom si tu veux alléger le repo
+# wp-content/plugins/
+
+# ===== Fichiers sensibles =====
+wp-config.php
+.env
+
+# ===== Fichiers système =====
+.DS_Store
+Thumbs.db
+
+# ===== Logs =====
+*.log
+debug.log

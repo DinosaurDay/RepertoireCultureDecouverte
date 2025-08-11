@@ -1,0 +1,269 @@
+/*
+Theme Name: projet-lpmn23-abraham
+Author: Noah ABRAHAM
+Version: 1.0
+*/
+
+/*General*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+span {
+    font-weight: bolder;
+}
+
+.separator {
+    border: #212529 solid 1px;
+    width: 100%;
+    margin: 50px 0;
+}
+
+main {
+    min-height: 100vh;
+    margin: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style-type:none; 
+    gap:10px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.page-container h1 {
+    align-self: flex-start;
+}
+
+.print-container {
+    max-width: 320px;
+    max-height: 430px;
+    border: solid 1px black;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-container h5 {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.bg-offset {
+    width: 90%;
+    height: 40%;
+    position: absolute;
+    top:300px;
+    left: 150px;
+    background-color: rgb(209, 208, 203);
+    z-index: -1;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.card {
+    width: 18rem; 
+    height: 585px;
+    /* border: solid 1px #212529; */
+}
+
+.card-info {
+    border-right: 1px solid #212529;
+    max-width:50%;
+}
+
+.cat-card {
+    width: 18rem; 
+    height: 300px;
+    border: solid 1px #212529;
+    text-decoration: none;
+}
+
+.card-body, .cat-card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition: 0.5s ease-in-out;
+}
+
+.cat-card-body {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-card-body:hover {
+    background-color: #212529;
+    color: white;
+}
+
+.search-nav-options, .films-nav-options {
+    display: flex;
+    gap: 10px;
+    max-height: 38px;
+    margin-bottom: 30px;
+}
+
+.films-nav-options {
+    position: absolute;
+    bottom: 0px;
+}
+
+.btn-primary {
+    max-width: 219px;
+}
+
+.btn-dark {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 0.25rem;
+    min-height: 38px;
+    padding: 0 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.card-body, .btn-dark {
+    justify-content: center;
+}
+
+.btn-dark a {
+    text-decoration: none;
+    color: white;
+}
+
+.home-welcome-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.welcome-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-films-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-genres-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.home-genres-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+}
+
+.home-genres-list li {
+    border: solid 1px #212529;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-genres {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+}
+
+.home-visite {
+    width: 100%;
+}
+
+.single-film-container {
+    display: flex;
+}
+
+/*Responsive displays*/
+
+@media screen and (max-width:800px) {
+
+    main {
+        margin: 0 40px;
+    }
+
+    .welcome-content {
+        flex-direction: column;
+    }
+
+    .articles {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .home-articles {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .home-genres-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .single-film-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single-film-container p, .content-container h5 {
+        text-align: center;
+    }
+
+    .bg-offset {
+        display: none;
+    }
+
+    .films-nav-options {
+        display: none;
+    }
+}
