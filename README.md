@@ -44,7 +44,7 @@ Lancer le site
 
 Accéder à l’URL locale (ex: http://localhost)
 
-##🔒 Sécurité
+## 🔒 Sécurité
 Les fichiers sensibles (wp-config.php, .env) ne sont pas inclus dans ce dépôt.
 
 Les images et médias sont exclus pour réduire la taille du dépôt.
